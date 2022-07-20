@@ -14,8 +14,8 @@ Project Organization
     ├── Readme.md
     ├── DESCRIPTION
     ├── NAMESPACE
+    ├── wagegap22package.Rproj
     ├── R
     ├── data
-    ├── wagegap22package.Rproj
     └── man
 ```
