@@ -6,8 +6,7 @@ library(devtools)
 install_github("niyangbai/wagegap22package")
 ```
 Project Organization
-------------
-
+```
     .
     ├── .gitignore
     ├── .Rbuildignore
@@ -19,3 +18,4 @@ Project Organization
     ├── data
     ├── wagegap22package.Rproj
     └── man
+```
