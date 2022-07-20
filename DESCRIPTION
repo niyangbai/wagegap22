@@ -1,13 +1,13 @@
 Package: wagegap22package
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Provides support for project wagegap22
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Niyang Bai
+Maintainer: Niyang Bai <niyangbai@uni-bonn.de>
+Description: Provides support for project wagegap22
+License: GPLv3
 Encoding: UTF-8
 LazyData: true
 Depends: 
-    R (>= 2.10)
+    R (>= 3.10)
+RoxygenNote: 7.1.1

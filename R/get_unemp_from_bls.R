@@ -1,11 +1,14 @@
-#' get unemploymentd data from bls
+#' Get unemployment data
 #'
-#' @param urls
+#' @description Get unemployment data from U.S. Bureau of Labor Statistics website
 #'
-#' @return
+#' @param urls The list of urls <example.xlsx> where unemployment data are stored.
+#'
+#' @return The unemployment dataset
 #' @export
 #'
 #' @examples
+#' get_unemp_from_bls("https://www.bls.gov/lau/laucnty20.xlsx")
 get_unemp_from_bls <- function(urls) {
   df <- data.frame()
   for (i in urls) {

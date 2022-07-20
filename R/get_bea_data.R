@@ -1,14 +1,17 @@
-#' get_bea_data
+#' Get Bea Data
 #'
-#' @param beaKey
-#' @param table_name
-#' @param line_code
-#' @param period
+#' @description Get data from U.S. Bureau of Economic Analysis (BEA) with API
 #'
-#' @return
+#' @param beaKey API key
+#' @param table_name The table name of the data
+#' @param line_code The line of the data
+#' @param period The time period of the data
+#'
+#' @return A data set from BEA
 #' @export
 #'
 #' @examples
+#' get_bea_data("abcdefghijklmn", "CAGDP1", 1, 2010:2015)
 get_bea_data <- function(beaKey, table_name, line_code, period) {
   df <- data.frame()
   for (i in period) {

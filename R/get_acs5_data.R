@@ -1,14 +1,17 @@
-#' get acs5 data
+#' Get ACS Data
 #'
-#' @param table_name
-#' @param period
-#' @param data_code
+#' @description Get American Community Survey (ACS) Data from censusapi.
 #'
-#' @return
+#' @param table_name The ACS table name of the dataset
+#' @param period The time period of the dataset
+#' @param data_code The ACS Code of the variable
+#'
+#' @return ACS Data
 #' @export
 #'
 #' @examples
-get_acs5_data <- function(table_name, period, data_code, group_code = NA) {
+#' get_acs5_data("acs/acs5", 2010:2015, c("B20017A", "B20017B"))
+get_acs5_data <- function(table_name, period, data_code) {
   df <- data.frame()
   for (year in period) {
     data <- getCensus(
