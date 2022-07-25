@@ -25,6 +25,6 @@ find_difs <- function(start_year, end_year, data = minimum_wage) {
   ends <- data[which(data[["year"]] == end_year),]
   data <- merge(starts, ends, by = "state")
   df <- data["state"]
-  df$dif <- data$State.Minimum.Wage.x - data$State.Minimum.Wage.y
+  df$dif <- data$Effective.Minimum.Wage.x - data$Effective.Minimum.Wage.y
   return(df)
 }
