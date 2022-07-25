@@ -20,7 +20,7 @@
 #'
 #' @examples
 #' find_difs(2010, 2015)
-find_difs <- function(start_year, end_year, data = minwage_state_year) {
+find_difs <- function(start_year, end_year, data = minimum_wage) {
   starts <- data[which(data[["year"]] == start_year),]
   ends <- data[which(data[["year"]] == end_year),]
   data <- merge(starts, ends, by = "state")
