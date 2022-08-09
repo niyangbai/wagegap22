@@ -20,11 +20,11 @@
 #'
 #' @examples
 #' find_difs(2010, 2015)
-find_difs <- function(start_year, end_year, data = minimum_wage, kind = Effective.Minimum.Wage.x) {
+find_difs <- function(start_year, end_year, data = minimum_wage, kind = "Effective.Minimum.Wage") {
   starts <- data[which(data[["year"]] == start_year),]
   ends <- data[which(data[["year"]] == end_year),]
   data <- merge(starts, ends, by = "state")
   df <- data["state"]
-  df$dif <- data$kind - data$kind
+  df$dif <- data[[paste0(kind, ".x")]] - data[[paste0(kind, ".y")]]
   return(df)
 }
