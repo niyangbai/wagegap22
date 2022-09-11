@@ -4,7 +4,12 @@
 \alias{find_difs}
 \title{Find difference of minimum wage}
 \usage{
-find_difs(start_year, end_year, data = minwage_state_year)
+find_difs(
+  start_year,
+  end_year,
+  data = minimum_wage,
+  kind = "Effective.Minimum.Wage"
+)
 }
 \arguments{
 \item{start_year}{The start year}
