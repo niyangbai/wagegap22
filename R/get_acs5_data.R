@@ -50,7 +50,7 @@ get_acs5_distrubution <- function(table_name, period, data_code) {
     data$fips <- paste0(data$state, data$county)
     data$year <- year
     data$ID <- paste0(data$year, data$fips)
-    df <- data["ID"]
+    df <- data[,c("ID", "fips", "year")]
     x <- ncol(df)
     for (i in 1:nrow(data_code)) {
       df[,(i+x)] <- rowSums(data[,data_code[i,]])
